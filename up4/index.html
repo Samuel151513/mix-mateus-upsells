@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Empréstimo Instantâneo - Mix Mateus</title>
+<link rel="stylesheet" href="css/style.css">
+<script src="https://cdn.jsdelivr.net/gh/xTracky/static@latest/utm-handler.js" data-token="4a43bc19-f6af-46ed-b1d3-da41fe93c14a" data-click-id-param="click_id"></script>
+<style>.timer{font-size:40px;font-weight:bold;color:#0D6EFD;font-variant-numeric:tabular-nums;}</style>
+</head>
+<body>
+<header><div class="container"><img src="images/logo-mix-mateus.png" alt="Mix Mateus"></div></header>
+<div class="container" style="padding-top:32px;">
+<div style="text-align:center;margin-bottom:16px;"><span class="badge" style="animation:pulse 2s infinite;">💰 EMPRÉSTIMO INSTANTÂNEO DISPONÍVEL</span></div>
+<div class="card" style="padding:16px;margin-bottom:24px;border:2px solid #0D6EFD;"><p style="text-align:center;color:#374151;font-size:14px;font-weight:600;margin-bottom:4px;">⏰ Oferta válida por:</p><div style="text-align:center;"><span class="timer" id="timer">15:00</span></div></div>
+<div style="text-align:center;margin-bottom:24px;"><h1 style="font-size:32px;margin-bottom:8px;">Precisa de dinheiro agora?</h1><h2 style="font-size:40px;color:#0D6EFD;font-weight:900;margin-bottom:16px;">R$ 1.500 Liberados em 2 Minutos</h2><p class="subtitle">Empréstimo pré-aprovado direto na sua conta Mix Mateus</p></div>
+<div class="card"><div style="background:linear-gradient(135deg,#0D6EFD,#0960e0);border-radius:16px;padding:32px;text-align:center;color:white;margin-bottom:32px;box-shadow:0 10px 20px rgba(13,110,253,0.3);"><div style="font-size:14px;opacity:0.8;margin-bottom:8px;">Valor Disponível para Você</div><div style="font-size:60px;font-weight:900;margin-bottom:16px;">R$ 1.500</div><div style="background:rgba(255,255,255,0.2);backdrop-filter:blur(10px);border-radius:8px;padding:8px 16px;display:inline-block;"><span style="font-size:14px;font-weight:500;">✅ Pré-aprovado | ⚡ Liberação Imediata</span></div></div>
+<h3 style="font-size:20px;font-weight:bold;text-align:center;margin-bottom:24px;">Como você pode usar estes R$ 1.500:</h3>
+<div style="display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-bottom:32px;"><div style="background:#eff6ff;border-radius:12px;padding:16px;text-align:center;"><div style="font-size:30px;margin-bottom:8px;">💸</div><div style="font-size:14px;font-weight:600;">Transferir por PIX</div></div><div style="background:#eff6ff;border-radius:12px;padding:16px;text-align:center;"><div style="font-size:30px;margin-bottom:8px;">🛒</div><div style="font-size:14px;font-weight:600;">Fazer Compras</div></div><div style="background:#eff6ff;border-radius:12px;padding:16px;text-align:center;"><div style="font-size:30px;margin-bottom:8px;">📄</div><div style="font-size:14px;font-weight:600;">Pagar Contas</div></div><div style="background:#eff6ff;border-radius:12px;padding:16px;text-align:center;"><div style="font-size:30px;margin-bottom:8px;">🏧</div><div style="font-size:14px;font-weight:600;">Sacar Dinheiro</div></div></div>
+<div class="price-section"><p class="price-label">Taxa única de liberação:</p><p class="price-value">R$ 12,90</p><p class="price-note">Pague apenas 1x - sem juros mensais</p></div>
+<button class="btn-primary" onclick="redirectToCheckout('c4fc58bc-e9e9-4cbc-b890-381eefc590dd')">💰 Liberar R$ 1.500 Agora</button>
+<div class="security-text"><svg style="width:20px;height:20px;" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg><span>Pré-Aprovado Garantido</span></div>
+<button class="btn-decline" onclick="window.location.href='/'">Não preciso de empréstimo agora</button>
+</div>
+<footer><p>Mix Mateus. Todos os direitos reservados</p><p>CNPJ 00.000.000/0001-00</p></footer>
+</div>
+<script src="js/utm.js"></script>
+<script>let t=900;setInterval(()=>{if(t>0){t--;const m=Math.floor(t/60),s=t%60;document.getElementById('timer').textContent=`${String(m).padStart(2,'0')}:${String(s).padStart(2,'0')}`;}},1000);</script>
+</body>
+</html>
